@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ROT 29.03</title>
+    
+    <!-- Include Tailwind JIT CDN -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script type="tailwind-config">
+    {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'impact': ['Impact', 'sans-serif']
+                },
+                colors: {
+                    'accent-red': '#FF0000'
+                },
+                fontSize: {
+                    '8xl': '6rem',
+                    '9xl': '8rem',
+                    '10xl': '10rem'
+                }
+            }
+        }
+    }
+    </script>
+    
+    <!-- Stripe Buy Button Script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+</head>
+<body class="bg-black text-white font-impact min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+        <header class="text-center mb-16">
+            <h1 class="text-accent-red text-7xl md:text-8xl lg:text-9xl mb-4 tracking-tight">ROT 29.03</h1>
+            <p class="text-lg md:text-xl">Pokaz ROT 29.03, godzina 19, Mińska 65, Warszawa</p>
+        </header>
+        
+        <main class="max-w-4xl mx-auto">
+            <section class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-4 text-accent-red">PACKAGE ONE</h3>
+                        <p class="mb-6">Premium package with exclusive features and benefits.</p>
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1R6tzlRsV57dVG8U4Yp2rLn4"
+                            publishable-key="pk_live_51PZH01RsV57dVG8U1YpukwsjnnbzHIj70a4Xn77hG92KfvwAxvZ2YWAqMuHcO8PL4XZ6LyiRweuTYs3rUPiXKZ1h00Ifyq0lmt"
+                        >
+                        </stripe-buy-button>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-2xl mb-4 text-accent-red">PACKAGE TWO</h3>
+                        <p class="mb-6">Ultimate package with all premium features and additional bonuses.</p>
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1R6uP9RsV57dVG8USd0q8tv6"
+                            publishable-key="pk_live_51PZH01RsV57dVG8U1YpukwsjnnbzHIj70a4Xn77hG92KfvwAxvZ2YWAqMuHcO8PL4XZ6LyiRweuTYs3rUPiXKZ1h00Ifyq0lmt"
+                        >
+                        </stripe-buy-button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center py-6 border-t border-gray-800">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html> 
