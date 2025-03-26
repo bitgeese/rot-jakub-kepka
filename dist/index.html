@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>ROT 29.03 - Pokaz Jakuba Kępki w Warszawie</title>
+    <meta name="title" content="ROT 29.03 - Pokaz Jakuba Kępki w Warszawie">
+    <meta name="description" content="Pokaz ROT, 29 marca o godzinie 19:00 w Warszawie na Mińskiej 65. Wydarzenie artystyczne Jakuba Kępki.">
+    <meta name="keywords" content="ROT, Jakub Kępka, pokaz artystyczny, Warszawa, Mińska 65, sztuka współczesna">
+    <meta name="author" content="Jakub Kępka">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/jpeg" href="images/final.jpeg">
+    <link rel="apple-touch-icon" href="images/final.jpeg">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="event">
+    <meta property="og:url" content="https://rot-site.pages.dev/">
+    <meta property="og:title" content="ROT 29.03 - Pokaz Jakuba Kępki w Warszawie">
+    <meta property="og:description" content="Pokaz ROT, 29 marca o godzinie 19:00 w Warszawie na Mińskiej 65. Wydarzenie artystyczne Jakuba Kępki.">
+    <meta property="og:image" content="https://rot-site.pages.dev/images/final.jpeg">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://rot-site.pages.dev/">
+    <meta property="twitter:title" content="ROT 29.03 - Pokaz Jakuba Kępki w Warszawie">
+    <meta property="twitter:description" content="Pokaz ROT, 29 marca o godzinie 19:00 w Warszawie na Mińskiej 65. Wydarzenie artystyczne Jakuba Kępki.">
+    <meta property="twitter:image" content="https://rot-site.pages.dev/images/final.jpeg">
+    
+    <!-- Include Tailwind JIT CDN -->
+    <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
+    
+    <!-- Tailwind Configuration -->
+    <script type="tailwind-config">
+    {
+        theme: {
+            extend: {
+                fontFamily: {
+                    'impact': ['Impact', 'sans-serif']
+                },
+                colors: {
+                    'accent-red': '#FF0000'
+                },
+                fontSize: {
+                    '8xl': '6rem',
+                    '9xl': '8rem',
+                    '10xl': '10rem'
+                }
+            }
+        }
+    }
+    </script>
+    
+    <!-- Stripe Buy Button Script -->
+    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Event",
+      "name": "ROT",
+      "startDate": "2024-03-29T19:00",
+      "endDate": "2024-03-29T22:00",
+      "eventStatus": "https://schema.org/EventScheduled",
+      "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+      "location": {
+        "@type": "Place",
+        "name": "Mińska 65",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Mińska 65",
+          "addressLocality": "Warszawa",
+          "addressCountry": "PL"
+        }
+      },
+      "image": "https://rot-site.pages.dev/images/final.jpeg",
+      "description": "Pokaz ROT, 29 marca o godzinie 19:00 w Warszawie na Mińskiej 65. Wydarzenie artystyczne Jakuba Kępki.",
+      "performer": {
+        "@type": "Person",
+        "name": "Jakub Kępka",
+        "url": "https://jakubkepka.com"
+      },
+      "organizer": {
+        "@type": "Person",
+        "name": "Jakub Kępka",
+        "url": "https://jakubkepka.com"
+      }
+    }
+    </script>
+</head>
+<body class="bg-black text-white font-impact min-h-screen">
+    <div class="container mx-auto px-4 py-16">
+        <header class="text-center mb-16">
+            <h1 class="text-accent-red text-7xl md:text-8xl lg:text-9xl mb-4 tracking-tight">ROT 29.03</h1>
+            <p class="text-lg md:text-xl">Pokaz ROT 29.03, godzina 19, Mińska 65, Warszawa</p>
+        </header>
+        
+        <main class="max-w-4xl mx-auto">
+            <section class="mb-16">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                    <div class="p-6 flex justify-center">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1R6tzlRsV57dVG8U4Yp2rLn4"
+                            publishable-key="pk_live_51PZH01RsV57dVG8U1YpukwsjnnbzHIj70a4Xn77hG92KfvwAxvZ2YWAqMuHcO8PL4XZ6LyiRweuTYs3rUPiXKZ1h00Ifyq0lmt"
+                        >
+                        </stripe-buy-button>
+                    </div>
+                    <div class="p-6 flex justify-center">
+                        <stripe-buy-button
+                            buy-button-id="buy_btn_1R6uP9RsV57dVG8USd0q8tv6"
+                            publishable-key="pk_live_51PZH01RsV57dVG8U1YpukwsjnnbzHIj70a4Xn77hG92KfvwAxvZ2YWAqMuHcO8PL4XZ6LyiRweuTYs3rUPiXKZ1h00Ifyq0lmt"
+                        >
+                        </stripe-buy-button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="text-center py-6 border-t border-gray-800">
+            <p><a href="https://jakubkepka.com" class="text-accent-red hover:text-red-600">Jakub Kępka 2025</a></p>
+        </footer>
+    </div>
+</body>
+</html> 
